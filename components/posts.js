@@ -6,7 +6,8 @@ export default function Post({post}){
     const [collapsed, setCollapsed] = useState(false);
     const postRef = useRef(null);
 
-    const toggleCollapse = () => {
+    const toggleCollapse = (event) => {
+        event.stopPropagation(); 
         setCollapsed(!collapsed);
         postRef.current?.scrollIntoView({ behavior: "smooth", block: "center"});
     }
