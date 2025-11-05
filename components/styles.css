@@ -1,0 +1,50 @@
+.post {
+    position: relative;
+    border-left: 2px solid #000;
+    padding-left: 12px;
+}
+
+.scope-indicator {
+    width: 6px;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.scope-indicator:hover{
+    background-color: blue;
+}
+
+.scope-indicator.collapsed {
+    background: blue;
+}
+
+
+.content {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.author{
+    font-weight: 600;
+}
+
+.text {
+    margin: 6px 0;
+}
+
+.replies {
+    margin-left: 20px;
+}
